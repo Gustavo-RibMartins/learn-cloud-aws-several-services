@@ -60,3 +60,26 @@ Você só precisa utilizar SCT em migrações heterogêneas.
 ## Multi-AZ Deployment
 
 ![](./imagens/multiAZ.png)
+
+---
+
+## RDS e Aurora MySQL Migrations
+
+> A discussão é semelhante para PostgreSQL.
+
+**RDS MySQL para Aurora MySQL**
+
+* Opção 1: DB Snapshot do RDS MySQL e restore como MySQL Aurora DB;
+* Opção 2: Criar um Aurora Read Replica a partir do RDS MySQL, e quando o replication lag for zero, promovê-lo para DB Cluster (leva mais tempo e é mais caro);
+
+**MySQL Externo para Aurora MySQL**
+
+* Opção 1:
+    * Use `Percona XtraBackup` para criar um arquivo de backup no Amazon S3;
+    * Crie o Aurora MySQL DB a partir do S3.
+
+* Opção 2:
+    * Crie um Aurora MySQL DB
+    * Use o `mysqldump utility` para migrar MySQL para o Aurora (mais lento que o método do S3).
+
+> Use o DMS se os dois databases estão no ar em execução.

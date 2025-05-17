@@ -7,7 +7,8 @@ Repositório para estudos de serviços AWS de diversos assuntos, como Machine Le
 **Disaster Recovery e Migração**
 
 * [Database Migration Service](./dms/)
-* [Application Migration Service - MGN]()
+* [Application Discovery Service](./app_discovery/)
+* [Application Migration Service - MGN](./mgn/)
 
 ---
 

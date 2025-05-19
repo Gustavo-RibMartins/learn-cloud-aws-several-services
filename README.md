@@ -12,6 +12,12 @@ Repositório para estudos de serviços AWS de diversos assuntos, como Machine Le
 
 ---
 
+**Rede e Entrega de Conteúdo**
+
+* [Virtual Private Cloud - VPC](./vpc/)
+
+---
+
 ## 1. Disaster Recovery na AWS
 
 Qualquer evento que tenha um impacto negativo na continuidade dos negócios da empresa é um desastre.

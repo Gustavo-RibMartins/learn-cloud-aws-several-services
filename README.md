@@ -15,6 +15,7 @@ Repositório para estudos de serviços AWS de diversos assuntos, como Machine Le
 **Rede e Entrega de Conteúdo**
 
 * [Virtual Private Cloud - VPC](./vpc/)
+* [Route 53](./route53/)
 
 ---
 
